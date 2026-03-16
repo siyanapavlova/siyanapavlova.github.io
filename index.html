@@ -1,0 +1,862 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siyana Pavlova &ndash; Homepage</title>
+    <link rel="icon" type="image/x-icon" href="siyana.jpg" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <img src="imgs/siyana.jpg" alt="Profile Picture" class="profile-pic" />
+        <h2>Siyana Pavlova, PhD</h2>
+        <p class="title">Data Scientist</p>
+        <p class="profile">
+          Natural Language Processing - Data Processing - Data Visualization
+        </p>
+
+        <hr class="separator" />
+
+        <ul class="contact-info">
+          <li class="contact-item">
+            <i class="fa fa-brands fa-linkedin"></i>
+            <a href="https://linkedin.com/in/siyanapavlova" target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li class="contact-item">
+            <i class="fa fa-brands fa-github"></i>
+            <a href="https://github.com/siyanapavlova" target="_blank"
+              >GitHub</a
+            >
+          </li>
+
+          <li class="contact-item">
+            <i class="fa fa-brands fa-orcid"></i>
+            <a href="https://orcid.org/0009-0001-2252-592X" target="_blank"
+              >Orchid</a
+            >
+          </li>
+        </ul>
+      </aside>
+
+      <main class="content">
+        <nav class="navbar">
+          <button
+            class="nav-btn active"
+            onclick="showSection('about')"
+            name="about"
+          >
+            About
+          </button>
+          <button
+            class="nav-btn"
+            onclick="showSection('education')"
+            name="education"
+          >
+            Education
+          </button>
+          <button
+            class="nav-btn"
+            onclick="showSection('experience')"
+            name="experience"
+          >
+            Experience
+          </button>
+          <button class="nav-btn" onclick="showSection('skills')" name="skills">
+            Skills & tools
+          </button>
+          <button
+            class="nav-btn"
+            onclick="showSection('projects')"
+            name="projects"
+          >
+            Projects
+          </button>
+          <button
+            class="nav-btn"
+            onclick="showSection('publications')"
+            name="publications"
+          >
+            Publications
+          </button>
+          <button
+            class="nav-btn"
+            onclick="showSection('volunteering')"
+            name="volunteering"
+          >
+            Volunteering
+          </button>
+          <button
+            class="nav-btn"
+            onclick="showSection('interests')"
+            name="interests"
+          >
+            Interests
+          </button>
+        </nav>
+
+        <div id="about" class="section active">
+          <h1>About me</h1>
+          <p>Hi, welcome to my homepage!</p>
+          <p>
+            I am a <strong>data scientist</strong> with a focus on
+            <strong>natural language processing</strong> and
+            <strong>data visualization</strong>.
+          </p>
+          <p>
+            I recently completed a
+            <strong>PhD in Computer Science</strong> at the University of
+            Lorraine (Nancy, France) under the supervision of
+            <a href="https://members.loria.fr/MAmblard/" target="_blank"
+              >Maxime Amblard</a
+            >
+            and
+            <a href="https://members.loria.fr/BGuillaume/" target="_blank"
+              >Bruno Guillaume</a
+            >. I worked on <strong>semantic modeling</strong>, in particular the
+            development of a
+            <strong>new graph-based semantic representation formalism</strong>,
+            YARN. In the process, I also produced semantically
+            <strong>annotated corpora</strong> in the new formalism as well as
+            two other ones, compared existing formalisms and carried out a
+            number of
+            <strong>graph rewriting transoformation experiments</strong>.
+          </p>
+          <p>
+            Before that, I completed the
+            <strong
+              >Erasmus Mundus MSc in Language and Communication
+              Technologies</strong
+            >, spending the first year of my studies at University of Lorraine
+            (Nancy, France) and the second at Saarland University (Saarbrücken,
+            Germany), and before it a
+            <strong>BSc in Computer Science</strong> at the University of
+            Aberdeen (Aberdeen, United Kingdom). This included an Erasmus year
+            at the University of Padua (Padua, Italy), during which I discovered
+            my love for languages, which ultimately brought me onto my
+            professional path.
+          </p>
+
+          <p>
+            Aside from NLP, I am also very interested in
+            <strong>visualizations</strong> and the stories they can tell. I am
+            a strong proponent of <i>learning by doing</i> and find that I learn
+            best this way, especially when a project is close to my heart. That
+            is why, aside from honing my Data Science skills in general, I have
+            spent a portion of the last couple of months working on visulization
+            projects too. For an example, check out my
+            <a
+              href="https://siyanapavlova.github.io/twinning-bg/"
+              target="_blank"
+              >interactive map of twin towns in Bulgaria</a
+            >
+            :)
+          </p>
+
+          <div id="fun-facts">
+            <h3>Three fun facts about me</h3>
+            <ul>
+              <li>
+                <i class="fa fa-solid fa-language"></i>
+                My favourite linguistic phenomenon is evidentiality (especially
+                when expressed grammatically)
+              </li>
+              <li>
+                <i class="fa fa-solid fa-bicycle"></i>
+                When I first learnt how to ride a bike, I did so for (what
+                seemed to 6-year-old me like) 3 hours because I didn't know how
+                to get off
+              </li>
+              <li>
+                <i class="fa fa-solid fa-laptop-code"></i>
+                I got into informatics by accident (but stayed on purpose?)
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="education" class="section" style="display: none">
+          <h1>Education</h1>
+          <div class="resume-item">
+            <div class="date">Nov 2020 - June 2025</div>
+            <div class="details">
+              <h3>PhD in Computer Science</h3>
+              <p class="institution">University of Lorraine, Nancy, France</p>
+              <ul>
+                <li>
+                  Thesis:
+                  <a href="https://theses.fr/2025LORR0101" target="_blank"
+                    >Toward Scalable Semantic Annotation : Bridging Readability
+                    and a Wide Range of Phenomena into a Layered Meaning
+                    Representation</a
+                  >
+                </li>
+                <li>
+                  Advisors:
+                  <a href="https://members.loria.fr/MAmblard/" target="_blank"
+                    >Maxime Amblard</a
+                  >
+                  and
+                  <a href="https://members.loria.fr/BGuillaume/" target="_blank"
+                    >Bruno Guillaume</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="resume-item">
+            <div class="date">Sep 2018 - Oct 2020</div>
+            <div class="details">
+              <h3>MSc in Language and Communication Technologies</h3>
+              <p class="institution">
+                University of Lorraine, Nancy, France (Year 1)
+              </p>
+              <p class="institution">
+                Saarland University, Saarbrücken, Germany (Year 2)
+              </p>
+              <ul>
+                <li>
+                  First year project:
+                  <a
+                    href="https://github.com/siyanapavlova/AMR_annotations"
+                    target="_blank"
+                    >Going from UD towards AMR</a
+                  >, together with <a href="" target="_blank">Kelvin Han</a>
+                </li>
+                <li>
+                  Thesis:
+                  <a href="" target="_blank"
+                    >NLP Methods to Automate Language Learning Through Extensive
+                    Reading</a
+                  >
+                </li>
+                <li>
+                  Advisors:
+                  <a href="https://gueneumann.github.io/" target="_blank"
+                    >Günter Neumann</a
+                  >,
+                  <a
+                    href="https://www.uni-saarland.de/lehrstuhl/genabith.html"
+                    target="_blank"
+                    >Josef van Genabith</a
+                  >,
+                  <a
+                    href="https://linkedin.com/in/saadullahamin"
+                    target="_blank"
+                    >Saadullah Amin</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="resume-item">
+            <div class="date">Sep 2014 - June 2018</div>
+            <div class="details">
+              <h3>BSc Computer Science</h3>
+              <p class="institution">
+                University of Aberdeen, Aberdeen, United Kingdom
+              </p>
+              <p class="institution">
+                University of Padua, Padua, Italy (Erasmus year 2015-2016)
+              </p>
+              <ul>
+                <li>
+                  Thesis: Content Based Fake News Detection Using Knowledge
+                  Graphs
+                </li>
+                <li>
+                  Advisors:
+                  <a
+                    href="https://knowledge-representation.org/j.z.pan/"
+                    target="_blank"
+                  >
+                    Jeff Z. Pan</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <h1>Certificates</h1>
+
+          <div class="resume-item">
+            <div class="date">Mar 2026</div>
+            <div class="details">
+              <h3>IMB Data Science Professional Certificate</h3>
+              <p class="institution">
+                <a
+                  href="https://www.coursera.org/professional-certificates/ibm-data-science"
+                  target="_blank"
+                >
+                  Coursera</a
+                >, online course
+              </p>
+            </div>
+          </div>
+
+          <div class="resume-item">
+            <div class="date">Feb 2026</div>
+            <div class="details">
+              <h3>React 18 for Beginners</h3>
+              <p class="institution">
+                <a
+                  href="https://codewithmosh.com/p/ultimate-react-part1"
+                  target="_blank"
+                >
+                  Code with Mosh</a
+                >, online course
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="experience" class="section" style="display: none">
+          <!-- <div id="experience" class="section" style="display:none"></div> -->
+          <h1>Experience</h1>
+          <div class="resume-item">
+            <div class="date">Nov 2020 - June 2025</div>
+            <div class="details">
+              <h3>Doctoral Researcher</h3>
+              <p class="institution">University of Lorraine, Nancy, France</p>
+              <ul>
+                <li>
+                  Proposed a new semantic representation formalism that
+                  leverages the advantages of logic-based and graph-based
+                  formalisms
+                </li>
+                <li>
+                  Produced semantically annotated corpora in three different
+                  frameworks
+                </li>
+                <li>
+                  Compared semantic representation formalisms and their ability
+                  to encode various semantic phenomena
+                </li>
+                <li>
+                  Carried out transformation experiments between semantic
+                  formalisms using graph rewriting
+                </li>
+                <li>
+                  Teaching assistant in the local NLP Master's program for the
+                  following courses: Python Programming, Methods for NLP, Data
+                  Science
+                </li>
+              </ul>
+              <div class="skills-and-tools">
+                <span class="concept">Data processing</span>
+                <span class="concept">Annotation</span>
+                <span class="concept">Semantic modelling</span>
+                <span class="concept">Graph rewriting</span>
+                <span class="concept">Academic writing</span>
+                <span class="concept">Data science</span>
+                <span class="tool">Python</span>
+                <span class="tool">Jupyter</span>
+                <span class="tool">Grew</span>
+                <span class="tool">Git</span>
+                <span class="tool">LaTeX</span>
+                <span class="soft">Scientific communication</span>
+                <span class="soft">Teaching</span>
+                <span class="soft">Presentation</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="resume-item">
+            <div class="date">Sep 2023 - Aug 2024</div>
+            <div class="details">
+              <h3>Temporary Teaching and Research Assistant (ATER)</h3>
+              <p class="institution">
+                Institute of Digital Sciences, Management and Cognition (IDMC),
+                University of Lorraine, Nancy, France
+              </p>
+              <ul>
+                <li>
+                  Taught at all levels of the Bachelor’s (in French) and
+                  Master’s (in English) degrees
+                </li>
+                <li>
+                  Bachelor's courses:
+                  <ul>
+                    <li>Algorithms and Programming</li>
+                    <li>Databases</li>
+                    <li>Natural Language Processing</li>
+                    <li>Representation and reasoning formalisms</li>
+                    <li>Language engineering</li>
+                  </ul>
+                </li>
+                <li>
+                  Master's courses:
+                  <ul>
+                    <li>Python Programming</li>
+                    <li>Methods for NLP</li>
+                    <li>Discourse and Dialogue</li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="skills-and-tools">
+                <span class="concept">Algorithms</span>
+                <span class="concept">Relational Databases</span>
+                <span class="concept">Logic and reasoning</span>
+                <span class="tool">Python</span>
+                <span class="tool">SQL</span>
+                <span class="tool">Java</span>
+                <span class="soft">University teaching</span>
+                <span class="soft">Communication</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="resume-item">
+            <div class="date">June 2019 - Aug 2019</div>
+            <div class="details">
+              <h3>Research Intern</h3>
+              <p class="institution">Loria, Nancy, France</p>
+              <ul>
+                <li>
+                  Developed of a proof of concept RDF editor with two
+                  components:
+                  <ul>
+                    <li>
+                      basic editor which puts suggestions in alphabetical order
+                    </li>
+                    <li>
+                      deductive editor which uses reasoning to rank suggestions
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="skills-and-tools">
+                <span class="concept">Reasoning</span>
+                <span class="concept">Knowledge representation</span>
+                <span class="tool">php</span>
+                <span class="tool">RDF</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="resume-item">
+            <div class="date">June 2017 - Oct 2017</div>
+            <div class="details">
+              <h3>IT Intern</h3>
+              <p class="institution">Ticombo GmbH, Berlin, Germany</p>
+              <ul>
+                <li>Web scraping as the primary task</li>
+                <li>
+                  As in the typical startup setting, dabbled in other areas of
+                  the workflow: QA, project management, email template creation
+                </li>
+              </ul>
+              <div class="skills-and-tools">
+                <span class="concept">Web scraping</span>
+                <span class="concept">QA</span>
+                <span class="tool">Python</span>
+                <span class="tool">beautifulSoup</span>
+                <span class="tool">MongoDB</span>
+                <span class="soft">Project management</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="skills" class="section" style="display: none">
+          <h1>Skills & tools</h1>
+
+          <div class="skill-grid">
+            <div class="skill-card">
+              <h3>Data Science</h3>
+              <div class="skills-and-tools">
+                <span class="tool">Python</span>
+                <span class="tool">pandas</span>
+                <span class="tool">Jupyter</span>
+                <span class="tool">SQL</span>
+                <span class="tool">SPARQL</span>
+                <span class="tool">MongoDB</span>
+                <span class="tool">DeckGL</span>
+                <span class="tool">matplotlib</span>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <h3>Web Development</h3>
+              <div class="skills-and-tools">
+                <span class="tool">React</span>
+                <span class="tool">HTML/CSS</span>
+                <span class="tool">TypeScript</span>
+                <span class="tool">Django</span>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <h3>Misc</h3>
+              <div class="skills-and-tools">
+                <span class="tool">Git</span>
+                <span class="tool">LaTeX</span>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <h3>Concepts</h3>
+              <div class="skills-and-tools">
+                <span class="concept">NLP</span>
+                <span class="concept">Data processing</span>
+                <span class="concept">Web scraping</span>
+                <span class="concept">Parsing</span>
+                <span class="concept">Data visualization</span>
+                <span class="concept">Knowledege representation</span>
+                <span class="concept">Semantic modeling</span>
+                <span class="concept">Reasoning</span>
+                <span class="concept">Annotation</span>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <h3>Soft skills</h3>
+              <div class="skills-and-tools">
+                <span class="soft">Communication</span>
+                <span class="soft">Project management</span>
+                <span class="soft">Problem solving</span>
+                <span class="soft">Analytical thinking</span>
+                <span class="soft">Curiosity</span>
+                <span class="soft">Teaching</span>
+                <span class="soft">Coordination</span>
+                <span class="soft">Outreach</span>
+                <span class="soft">Training</span>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <h3>Languages</h3>
+              <div id="language-list">
+                <p><b>Bulgarian:</b> native</p>
+                <p><b>English:</b> C2</p>
+                <p><b>French:</b> B2</p>
+                <p><b>German:</b> B2</p>
+                <p><b>Italian:</b> B1</p>
+                <p><b>Spanish:</b> A2</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="projects" class="section" style="display: none">
+          <h1>Projects</h1>
+          <div class="project-grid">
+            <div class="project-card">
+              <a
+                href="https://siyanapavlova.github.io/twinning-bg/"
+                target="_blank"
+              >
+                <img
+                  src="imgs/twinning_bg.png"
+                  alt="Image of world map with exploration arcs of twin towns of one Bulgarian town"
+                  class="project-image"
+                />
+                <h2>Twinning BG</h2>
+                <p class="project-description">
+                  Exploratory data analysis and visualization of twin towns in
+                  Bulgaria
+                </p>
+                <div class="skills-and-tools">
+                  <span class="concept">Data visualization</span>
+                  <span class="concept">Data wrangling</span>
+                  <span class="tool">pandas</span>
+                  <span class="tool">React</span>
+                  <span class="tool">DeckGL</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="publications" class="section" style="display: none">
+          <h1>Publications</h1>
+          <div id="publication-list"></div>
+        </div>
+
+        <div id="volunteering" class="section" style="display: none">
+          <h1>Volunteering</h1>
+
+          <div class="resume-item">
+            <div class="date">July 2017 - June 2018</div>
+            <div class="details">
+              <h3>President</h3>
+              <p class="institution">
+                Robogals Aberdeen, University of Aberdeen, Aberdeen, United
+                Kingdom
+              </p>
+              <ul>
+                <li>Managed a team of 6.</li>
+                <li>Organised workshops and outreach events</li>
+                <li>Communicated and coordinated with schools and sponsors</li>
+                <li>
+                  Stats: 27 workshops, more than 900 children, two science
+                  festivals
+                </li>
+                <li>
+                  “Society of the Year” award from Aberdeen University Student
+                  Association among ~100 societies
+                </li>
+              </ul>
+              <div class="skills-and-tools">
+                <span class="soft">Leadership</span>
+                <span class="soft">Coordination</span>
+                <span class="soft">Event organization</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="resume-item">
+            <div class="date">Sep 2016 - June 2017</div>
+            <div class="details">
+              <h3>Volunteer</h3>
+              <p class="institution">
+                Robogals Aberdeen, University of Aberdeen, Aberdeen, United
+                Kingdom
+              </p>
+              <ul>
+                <li>Presented Science topics to primary school classes</li>
+                <li>
+                  Worked closely on experiments with a group of 5-6 children
+                  during weekly school visits
+                </li>
+                <li>
+                  Prepared materials for all the Computer Science workshops
+                </li>
+                <li>Trained volunteers for the Computer Science workshops</li>
+              </ul>
+              <div class="skills-and-tools">
+                <span class="soft">Science outreach</span>
+                <span class="soft">Lesson preparation</span>
+                <span class="soft">Volunteer training</span>
+                <span class="tool">Arduino</span>
+                <span class="tool">C++</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="resume-item">
+            <div class="date">Sept 2012 - June 2017</div>
+            <div class="details">
+              <h3>Teaching English to Italian and Slovenian Children</h3>
+              <p class="institution">
+                United World College of the Adriatic, Duino, Italy
+              </p>
+              <ul>
+                <li>Participated in weekly workshops</li>
+                <li>Prepared teaching materials monthly</li>
+              </ul>
+              <div class="skills-and-tools">
+                <span class="soft">Teaching</span>
+                <span class="soft">Lesson preparation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="interests" class="section" style="display: none">
+          <h1>Interests</h1>
+          <p>
+            Outside of my professional interests, I enjoy a variety of hobbies,
+            which not only let me express my creativity, but also often inspire
+            project ideas.
+          </p>
+
+          <div class="interest">
+            <h3>
+              <img src="imgs/yarnball.svg" style="width: 20px; height: auto" />
+              <!-- Unedited vector from https://www.svgrepo.com/svg/408261/yarn -->
+              Crochet
+            </h3>
+
+            <p>
+              I discovered crochet, in particular amigurumi, at the end of 2020
+              (and not because of the pandemic!) and haven't put my hook down
+              since.
+            </p>
+            <p>
+              I am the creator behind
+              <a
+                href="https://www.instagram.com/the.travel.ducks/"
+                target="_blank"
+                >The travel ducks</a
+              >
+              where I share my amigurumi makes and my first amigurumi designs. I
+              am currently working on several, scheduled for release in the
+              second half of 2026.
+            </p>
+          </div>
+
+          <div class="interest">
+            <h3>
+              <i class="fa fa-solid fa-feather-pointed"></i>Creative writing
+            </h3>
+            <p>
+              I used to write (mostly poems) as a child and teenager, then
+              stopped for a long while...
+            </p>
+            <p>
+              But hooray! I picked it up again ~2024, this time mostly prose
+              &ndash; I am working on a couple of short story and novel ideas,
+              mainly aimed at children and young adults. To keep the habit going
+              and to keep myself accountable, I recently joined the Writing
+              Community at
+              <a href="https://keller-theatre.de/" target="_blank"
+                >The Keller Theatre - Giessen's English Language Theatre</a
+              >.
+            </p>
+          </div>
+
+          <div class="interest">
+            <h3><i class="fa fa-solid fa-book-bookmark"></i>Reading</h3>
+            <p>
+              Mostly fantasy. Occasionally travelogues, pop science and
+              classics.
+            </p>
+            <p>Favourites:</p>
+            <ul>
+              <li>
+                <a
+                  href="https://www.rosemarykirstein.com/the-books/"
+                  target="_blank"
+                  >The Steerswoman series</a
+                >
+                by
+                <a href="https://www.rosemarykirstein.com/" target="_blank"
+                  >Rosemary Kirstein</a
+                >
+                (which and who I blame for my renewed interest in writing)
+              </li>
+              <li>
+                Anything Terry Pratchett. I'm slowly making my way through the
+                Discworld, so far I've particularly enjoyed
+                <a
+                  href="https://www.terrypratchettbooks.com/books/pyramids/"
+                  target="_blank"
+                  >Pyramids</a
+                >,
+                <a
+                  href="https://www.terrypratchettbooks.com/books/reaper-man/"
+                  target="_blank"
+                  >Reaper Man</a
+                >
+                and
+                <a
+                  href="https://www.terrypratchettbooks.com/books/witches-abroad/"
+                  target="_blank"
+                  >Witches Abroad</a
+                >
+              </li>
+              <li>
+                Gabriel García Márquez's
+                <a
+                  href="https://www.goodreads.com/book/show/320.One_Hundred_Years_of_Solitude"
+                  target="_blank"
+                  >One Hundred Years of Solitude</a
+                >
+              </li>
+            </ul>
+            <p>
+              You can check what I've been reading lately on
+              <a
+                href="https://www.goodreads.com/user/show/35988212-siyana-pavlova"
+                target="_blank"
+                >Goodreads</a
+              >.
+            </p>
+          </div>
+
+          <div class="interest">
+            <h3>
+              <i class="fa fa-solid fa-puzzle-piece"></i>Puzzles and riddles
+            </h3>
+            <p>I do enjoy a fun puzzle.</p>
+            <p>
+              I have taken part in 6 of the last 7 editions of
+              <a href="https://cs50.harvard.edu/x/puzzles/" target="_blank"
+                >CS50x Puzzle Day</a
+              >
+              where my team (via Duca degli Abruzzi) and I have always managed
+              to solve most or all of the problems.
+            </p>
+            <p>
+              I am also currently enjoying Alex Bellos'
+              <a
+                href="https://www.goodreads.com/book/show/44032416-so-you-think-you-ve-got-problems"
+                target="_blank"
+                >So You Think You've Got Problems?</a
+              >
+              and Raymond Smullyan's
+              <a
+                href="https://www.goodreads.com/book/show/493576.What_Is_the_Name_of_This_Book_"
+                target="_blank"
+                >What is the Name of this Book?</a
+              >.
+            </p>
+          </div>
+
+          <div class="interest">
+            <h3><i class="fa fa-solid fa-bicycle"></i>Cycling</h3>
+            <p>
+              Definitely my favourite mode of transportation &ndash; be it for a
+              commute or just for fun.
+            </p>
+            <p>
+              Combining this with my passion for travel and exploring new places
+              and cultures, I've taken two long-distance cycling trips: ~350 km
+              in 7 days in Italy in 2023, and ~300km in 5 days in France in
+              2025.
+            </p>
+          </div>
+
+          <div class="interest">
+            <h3><i class="fa fa-solid fa-dice"></i>Board games</h3>
+            <p>
+              Unsuprisingly, I enjoy games that feature puzzle elements or
+              require the use of logic.
+            </p>
+            <p>
+              Favourites:
+              <a
+                href="https://boardgamegeek.com/boardgame/46396/ubongo-3d"
+                target="_blank"
+                >Ubongo 3D</a
+              >,
+              <a
+                href="https://boardgamegeek.com/boardgame/408547/things-in-rings"
+                target="_blank"
+                >Things in Rings</a
+              >,
+              <a
+                href="https://boardgamegeek.com/boardgame/119632/iota"
+                target="_blank"
+                >Qwatro</a
+              >
+              (aka Iota)
+            </p>
+          </div>
+
+          <div class="interest">
+            <h3><i class="fa fa-solid fa-language"></i>Language learning</h3>
+            <p>
+              Ever since my Erasmus year in Italy, I have really enjoyed
+              language learning.
+            </p>
+            <p>I am currently working on improving my French and German.</p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

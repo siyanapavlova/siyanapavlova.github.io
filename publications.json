@@ -1,0 +1,154 @@
+[
+  {
+    "title": "Toward Scalable Semantic Annotation: Bridging Readability and a Wide Range of Phenomena into a Layered Meaning Representation",
+    "authors": ["Siyana Pavlova"],
+    "venue": "Ph.D. Thesis, Université de Lorraine",
+    "year": "2025",
+    "url": "https://theses.fr/2025LORR0101",
+    "pdf": "https://docnum.univ-lorraine.fr/public/DDOC_T_2025_0101_PAVLOVA.pdf",
+    "bibtex": "",
+    "abstract": "This work is situated in the area of semantic modeling, which aims to represent the meaning of natural language in a machine-processable form. Various formalisms exist in this direction. Logic-based ones offer more expressivity, but are more complex to annotate and analyse by humans. The ones aimed at large-scale annotation are more abstract, but at the cost of expressivity. To address the question of what should be included in the design of meaning representations, we carry out a survey on existing formalisms across various semantic phenomena and semantically-oriented considerations. With these in mind, we join the trend for reconciling the logic-based view on semantics with the readability offered by more abstract representations by proposing a new formalism, which uses a layered approach to represent various phenomena. Finally, to address the relative lack of parallel data in the field, we explore rule-based graph transformation methods between formalisms."
+  },
+  {
+    "title": "YARN is All You Knit: Encoding Multiple Semantic Phenomena with Layers",
+    "authors": ["Siyana Pavlova", "Maxime Amblard", "Bruno Guillaume"],
+    "venue": "Proceedings of the Fifth International Workshop on Designing Meaning Representations @ LREC-COLING 2024",
+    "year": "2024",
+    "url": "https://aclanthology.org/2024.dmr-1.8/",
+    "pdf": "https://aclanthology.org/2024.dmr-1.8.pdf",
+    "bibtex": "",
+    "abstract": "In this paper, we present the first version of YARN, a new semantic representation formalism. We propose this new formalism to unify the advantages of logic-based formalisms while retaining direct interpretation, making it widely usable. YARN is rooted in the encoding of different semantic phenomena as separate layers. We begin by presenting a formal definition of the mathematical structure that constitutes YARN. We then illustrate with concrete examples how this structure can be used in the context of semantic representation for encoding multiple phenomena (such as modality, negation and quantification) as layers built on top of a central predicate-argument structure. The benefit of YARN is that it allows for the independent annotation and analysis of different phenomena as they are easy to ``switch off''. Furthermore, we have explored YARN{'}s ability to encode simple interactions between phenomena. We wrap up the work presented by a discussion of some of the interesting observations made during the development of YARN so far and outline our extensive future plans for this formalism."
+  },
+  {
+    "title": "Structural and Global Features for Comparing Semantic Representation Formalisms",
+    "authors": ["Siyana Pavlova", "Maxime Amblard", "Bruno Guillaume"],
+    "venue": "Proceedings of the Fourth International Workshop on Designing Meaning Representations, pages 1–12",
+    "year": "2023",
+    "url": "https://aclanthology.org/2023.dmr-1.1/",
+    "pdf": "https://aclanthology.org/2023.dmr-1.1.pdf",
+    "bibtex": "",
+    "abstract": "The area of designing semantic/meaning representations is a dynamic one with new formalisms and extensions being proposed continuously. It may be challenging for users of semantic representations to select the relevant formalism for their purpose or for newcomers to the field to select the features they want to represent in a new formalism. In this paper, we propose a set of structural and global features to consider when designing formalisms, and against which formalisms can be compared. We also propose a sample comparison of a number of existing formalisms across the selected features, complemented by a more entailment-oriented comparison on the phenomena of the FraCaS corpus."
+  },
+  {
+    "title": "Bridging Semantic Frameworks: mapping DRS onto AMR",
+    "authors": ["Siyana Pavlova", "Maxime Amblard", "Bruno Guillaume"],
+    "venue": "The 15th International Conference on Computational Semantics (IWCS 2023)",
+    "year": "2023",
+    "url": "https://aclanthology.org/2023.iwcs-1.21/",
+    "pdf": "https://aclanthology.org/2023.iwcs-1.21.pdf",
+    "bibtex": "",
+    "abstract": "A number of graph-based semantic representation frameworks have emerged in recent years, but there are few parallel annotated corpora across them. We want to explore the viability of transforming graphs from one framework into another to construct parallel datasets. In this work, we consider graph rewriting from Discourse Representation Structures (Parallel Meaning Bank (PMB) variant) to Abstract Meaning Representation (AMR). We first build a gold AMR corpus of 102 sentences from the PMB. We then construct a rule base, aided by a further 95 sentences. No benchmark for this task exists, so we compare our system{'}s output to that of state-of-the-art AMR parsers, and explore the more challenging cases. Finally, we discuss where the two frameworks diverge in encoding semantic phenomena."
+  },
+  {
+    "title": "A Layered Approach to Semantic Representation",
+    "authors": ["Siyana Pavlova", "Maxime Amblard", "Bruno Guillaume"],
+    "venue": "Journées scientifiques du GDR Lift-LIFT 2023",
+    "year": "2023",
+    "url": "https://hal.science/hal-04356436/",
+    "pdf": "https://inria.hal.science/hal-04356436v1/document",
+    "bibtex": "",
+    "abstract": "In this article, we present a first version of a layered approach we take to semantic repre- sentation. Our approach is motivated by the need for a semantic representation formalism which can encode a rich variety of semantic phenomena, while remaining simple to annotate and easy to read. Our representation derives its core predicate-argument (PA) structure from Abstract Meaning Representation (AMR), but is then extended with a number of types of nodes and edges. We introduce “features” - nodes for each semantic phenomenon we wish to encode. Features represent various layers of our representation. Edges are then attached to each feature node, that can link to nodes from the PA-structure of the representation or, in the case of interacting semantic phenomena, to edges from other layers. An advantage of our approach is the possibility to exclude layers from the representation easily, while still being able to represent phenomena such as scope that are difficult for most graph-oriented formalisms."
+  },
+  {
+    "title": "Graph Querying for Semantic Annotations",
+    "authors": [
+      "Maxime Amblard",
+      "Bruno Guillaume",
+      "Siyana Pavlova",
+      "Guy Perrier"
+    ],
+    "venue": "Proceedings of the 18th Joint ACL - ISO Workshop on Interoperable Semantic Annotation within LREC2022",
+    "year": "2022",
+    "url": "https://aclanthology.org/2022.isa-1.13/",
+    "pdf": "https://aclanthology.org/2022.isa-1.13.pdf",
+    "bibtex": "",
+    "abstract": "This paper presents how the online tool Grew-match can be used to make queries and visualise data from existing semantically annotated corpora. A dedicated syntax is available to construct simple to complex queries and execute them against a corpus. Such queries give transverse views of the annotated data, this views can help for checking the consistency of annotations in one corpus or across several corpora. Grew-match can then be seen as an error mining tool: when inconsistencies are detected, it helps finding the sentences which should be fixed. Finally, Grew-match can also be used as a side tool to assist annotation task helping to find annotations examples in existing corpora to be compare to the data to be annotated."
+  },
+  {
+    "title": "How much of UCCA can be predicted from AMR?",
+    "authors": ["Siyana Pavlova", "Maxime Amblard", "Bruno Guillaume"],
+    "venue": "Proceedings of the 18th Joint ACL - ISO Workshop on Interoperable Semantic Annotation within LREC2022",
+    "year": "2022",
+    "url": "https://aclanthology.org/2022.isa-1.15/",
+    "pdf": "https://aclanthology.org/2022.isa-1.15.pdf",
+    "bibtex": "",
+    "abstract": "In this paper, we consider two of the currently popular semantic frameworks: Abstract Meaning Representation (AMR) - a more abstract framework, and Universal Conceptual Cognitive Annotation (UCCA) - an anchored framework. We use a corpus-based approach to build two graph rewriting systems, a deterministic and a non-deterministic one, from the former to the latter framework. We present their evaluation and a number of ambiguities that we discovered while building our rules. Finally, we provide a discussion and some future work directions in relation to comparing semantic frameworks of different flavors."
+  },
+  {
+    "title": "Quantification Annotation in ISO 24617-12, Second Draft",
+    "authors": [
+      "Harry Bunt",
+      "Maxime Amblard",
+      "Johan Bos",
+      "Karën Fort",
+      "Bruno Guillaume",
+      "Philipp de Groote",
+      "Chuyuan Li",
+      "Pierre Ludmann",
+      "Michel Misoul",
+      "Siyana Pavlova",
+      "Guy Perrier",
+      "Sylvain Pogodalla"
+    ],
+    "venue": "LREC 2022-13th Edition of Language Resources and Evaluation Conference, 2022.",
+    "year": "2022",
+    "url": "https://aclanthology.org/2022.lrec-1.364/",
+    "pdf": "https://aclanthology.org/2022.lrec-1.364.pdf",
+    "bibtex": "",
+    "abstract": "This paper describes the continuation of a project that aims at establishing an interoperable annotation schema for quantification phenomena as part of the ISO suite of standards for semantic annotation, known as the Semantic Annotation Framework. After a break, caused by the Covid-19 pandemic, the project was relaunched in early 2022 with a second working draft of an annotation scheme, which is discussed in this paper. Keywords: semantic annotation, quantification, interoperability, annotation schema, ISO standard"
+  },
+  {
+    "title": "The annotators did not agree on some of the guidelines examples.",
+    "authors": [
+      "Maxime Amblard",
+      "Karën Fort",
+      "Bruno Guillaume",
+      "Philipp de Groote",
+      "Chuyuan Li",
+      "Pierre Ludmann",
+      "Michel Misoul",
+      "Siyana Pavlova",
+      "Guy Perrier",
+      "Sylvain Pogodalla"
+    ],
+    "venue": "ISA 2021-17th Workshop on Interoperable Semantic Annotation",
+    "year": "2021",
+    "url": "https://inria.hal.science/hal-03298940/",
+    "pdf": "https://inria.hal.science/hal-03298940/file/IWCS_2021__Quantification_Annotation_Shared_Task.pdf",
+    "bibtex": "",
+    "abstract": "We propose the annotation of 7 sentences out of the 31 provided in the ISA-17 shared task, according to our understanding of the guidelines. We include here several remarks to improve the annotation and provide some tools to make the task easier. "
+  },
+  {
+    "title": "Assisting the RDF annotation of a digital humanities corpus using case-based reasoning",
+    "authors": [
+      "Nicolas Lasolle",
+      "Olivier Bruneau",
+      "Jean Lieber",
+      "Emmanuel Nauer",
+      "Siyana Pavlova"
+    ],
+    "venue": "Semantic Web Conference, pages 617–633, 2020. Springer International Publishing Cham",
+    "year": "2020",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-030-62466-8_38",
+    "pdf": "https://d1wqtxts1xzle7.cloudfront.net/99868631/ISWC_2020_CR-libre.pdf?1678874395=&response-content-disposition=inline%3B+filename%3DAssisting_the_RDF_Annotation_of_a_Digita.pdf&Expires=1773333313&Signature=VkZgPmIR6NFMMfwEAN4ya-413ALhtjeCYXfh7RxrIp24jFyu3oJYXXKbgK7Iqd8KO4H-qoVVIyU6H71j7QsDBpTzuSnWEvHd4ndaVS2IZOinAHl76L2wTBLC0PwYTwjyGOMbjaBjSlj6ZFyaX1n5Eu7A0pBb0QG3fz5yTnGHtJYQKcx5zrio3OGvfEJi6fZhuhucSe3vQTG8IQAm2RuOLgEy4Mjk-Bv2dOP35Y~A8RUirfPF3opWH2v8kjKG8Rzk7D0Ic~3FnlXfATzsy-PYlTQwJiyrk44s8tinfF3z-pB9vqr1JluKUBEEbarVN8r2XjIJdfpR1mTI8jKUTs4Gig__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA",
+    "bibtex": "",
+    "abstract": "The Henri Poincaré correspondence is a corpus composed of around 2100 letters which is a rich source of information for historians of science. Semantic Web technologies provide a way to structure and publish data related to this kind of corpus. However, Semantic Web data editing is a process which often requires human intervention and may seem tedious for the user. This article introduces , an editor which aims at facilitating annotation of documents. This tool uses case-based reasoning (cbr) to provide suggestions for the user which are related to the current document annotation process. These suggestions are found and ranked by considering the annotation context related to the resource currently being edited and by looking for similar resources already annotated in the database. Several methods and combinations of methods are presented here, as well as the evaluation associated with each of them."
+  },
+  {
+    "title": "Content based fake news detection using knowledge graphs",
+    "authors": [
+      "Jeff Z. Pan",
+      "Siyana Pavlova",
+      "Chenxi Li",
+      "Ningxi Li",
+      "Yangmei Li",
+      "Jinshuo Liu"
+    ],
+    "venue": "International semantic web conference, pages 669–683, 2018. Springer International Publishing Cham",
+    "year": "2018",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-030-00671-6_39",
+    "pdf": "http://www.knowledge-representation.org/j.z.pan/pub/PPLL+2018.pdf",
+    "bibtex": "",
+    "abstract": "This paper addresses the problem of fake news detection. There are many works already in this space; however, most of them are for social media and not using news content for the decision making. In this paper, we propose some novel approaches, including the B-TransE model, to detecting fake news based on news content using knowledge graphs. In our solutions, we need to address a few technical challenges. Firstly, computational-oriented fact checking is not comprehensive enough to cover all the relations needed for fake news detection. Secondly, it is challenging to validate the correctness of the extracted triples from news articles. Our approaches are evaluated with the Kaggle’s ‘Getting Real about Fake News’ dataset and some true articles from main stream media. The evaluations show that some of our approaches have over 0.80 F1-scores."
+  }
+]
