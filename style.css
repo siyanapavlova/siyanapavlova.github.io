@@ -16,9 +16,9 @@ body {
 }
 
 :root {
-  --main-color: teal;
+  --main-color: #008080;
   --main-color-light: #e0f7fa;
-  --secondary-color: rgb(96, 63, 132);
+  --secondary-color: #603f84;
   --secondary-color-light: #f3e5f5; /* #f9d6ff; */
   --third-color: #af7800;
   /* --third-color-light: #f7c860; */
@@ -288,16 +288,19 @@ li {
 .skill-card .skills-and-tools span.concept {
   background: var(--main-color-light);
   color: var(--main-color);
+  /* color: #333; */
 }
 
 .skill-card .skills-and-tools span.tool {
   background: var(--secondary-color-light);
   color: var(--secondary-color);
+  /* color: #333; */
 }
 
 .skill-card .skills-and-tools span.soft {
   background: var(--third-color-light);
   color: var(--third-color);
+  /* color: #333; */
 }
 
 /* Project grid */
